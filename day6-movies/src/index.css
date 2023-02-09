@@ -1,0 +1,110 @@
+::-webkit-scrollbar{
+  background-color: #131313;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: crimson;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #131313;
+
+}
+p, h3{
+  color: #f4f4f4;
+
+}
+.app{
+  max-width: 1200px;
+  margin: auto;
+}
+.app h1{
+  color: #fff;
+}
+.app h1 span{
+  color: crimson;
+}
+.navbar{
+  display: flex;
+  justify-content: flex-start;
+  gap: 10rem;
+  align-items: center;
+  padding: 1rem;
+  position: sticky;
+  top: -1px;
+  z-index: 5;
+  background-color: #131313;
+}
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search input{
+  width: 400px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid crimson;
+  outline: none;
+  color: #f4f4f4;
+  padding: .3rem .6rem;
+  font-size: 17px;
+}
+input::placeholder{
+  color: #bbb;
+}
+.search .icon{
+  color: crimson ;
+  font-size: 25px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+.movie{
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 7px;
+  border: 1px solid #262626;
+  position: relative;
+}
+.imgBox{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;left: 0;
+
+}
+.imgBox img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cardBody{
+  position: absolute;
+  bottom: -50%;left: 0;
+  width: 100%;
+  min-height: 90px;
+  background:rgba(0,0,0,.8) ;
+  padding: 10px;
+  transition: .8s;
+}
+.movie:hover .cardBody{
+  bottom: 0;
+}
