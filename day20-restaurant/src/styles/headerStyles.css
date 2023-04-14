@@ -1,0 +1,15 @@
+.nav-menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 16px;
+}
+.nav-menu li a{
+    text-decoration: none;
+    color: #181818;
+    position: relative;
+}
+.nav-menu li a:hover{
+    color: #624862;
+}

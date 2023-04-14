@@ -1,7 +1,8 @@
-import { LocalPizza } from '@mui/icons-material'
-import { AppBar, Box, Toolbar, Typography } from '@mui/material'
-import React from 'react'
-import {Link} from 'react-router-dom'
+import { LocalPizza } from '@mui/icons-material';
+import { AppBar, Box, Toolbar, Typography } from '@mui/material';
+import React from 'react';
+import {Link} from 'react-router-dom';
+import '../../styles/headerStyles.css';
 
 const Header = () => {
   return (
@@ -13,8 +14,8 @@ const Header = () => {
           <Typography fontSize={2} color="error" sx={{flexGrow:1}}>
             <LocalPizza sx={{fontSize:'36px', transform:"rotate(180deg)"}}/>
           </Typography>
-          <Box>
-            <ul>
+          <Box sx={{display:{xs:"none", sm:"block"}}}>
+            <ul className='nav-menu'>
               <li>
                 <Link to='/'>Home</Link>
               </li>
@@ -27,7 +28,7 @@ const Header = () => {
               <li>
                 <Link to='/contact'>Contact</Link>
               </li>
-              
+               
             </ul>
           </Box>
           </Toolbar>
