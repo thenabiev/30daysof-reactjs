@@ -1,5 +1,5 @@
 import { LocalPizza } from '@mui/icons-material';
-import { AppBar, Box, Drawer, IconButton,  Toolbar, Typography } from '@mui/material';
+import { AppBar, Box,  Drawer, IconButton,  Toolbar, Typography } from '@mui/material';
 import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
 import '../../styles/headerStyles.css';
@@ -16,7 +16,7 @@ const Header = () => {
   // Menu Drawer
   const drawer=(
     <Box onClick={handleDrawerToggle} sx={{textAlign:"center", paddingLeft:"1em"}}>
-          <Typography fontSize={2} color="error"   sx={{flexGrow:1, display:"flex" , alignItems:'center', }}>
+          <Typography fontSize={2} color="error" sx={{flexGrow:1, display:"flex" , alignItems:'center', }}>
           <span style={{fontSize:'36px', fontWeight:"600", color:"#181818"}}>Pizz</span>
             <LocalPizza sx={{fontSize:'36px', transform:"rotate(180deg)"}}/>
           </Typography>
@@ -83,6 +83,7 @@ const Header = () => {
               {drawer}
             </Drawer>
         </Box>
+        <Toolbar />
       </Box>
     </>
   )

@@ -19,7 +19,7 @@
     align-items: start;
     justify-content: start;
     gap: 20px;
-    min-width: 250px;
+    min-width: 220px;
     padding-top: 50px;
 }
 .mobile-nav-menu *{
