@@ -83,7 +83,9 @@ const Header = () => {
               {drawer}
             </Drawer>
         </Box>
-        <Toolbar />
+        <Box>
+          <Toolbar />
+        </Box>
       </Box>
     </>
   )
