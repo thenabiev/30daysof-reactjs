@@ -7,3 +7,15 @@
   list-style: none;
   text-decoration: none;
 }
+.home{
+  width: 100%;
+  min-height: 92vh;
+  background: fixed url('../src/assets/banner1.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-left: 2rem;
+}
