@@ -19,3 +19,29 @@
   justify-content: center;
   padding-left: 2rem;
 }
+.sectionHeader{
+  position: relative;
+  cursor: pointer;
+}
+.sectionHeader::after{
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 5px;
+  border-radius: 4px;
+  background-color: crimson;
+  bottom: 0;
+  left: 46%;
+  transition: .5s;
+}
+.sectionHeader:hover::after{
+  width: 50px;
+  left: 50%;
+
+}
+
+@media screen and (max-width:350px) {
+  .home{
+    padding-left: 1em;
+  }
+}
