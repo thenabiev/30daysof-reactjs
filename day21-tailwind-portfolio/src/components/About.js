@@ -22,16 +22,16 @@ const About = () => {
       className='section'
       ref={ref}>
       <div className="container mx-auto">
-        <div>
+        <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
           {/* IMAGE */}
           <div 
-            className='flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top'
+            className='flex-1 bg-about bg-contain bg-no-repeat min-h-[640px] mix-blend-lighten bg-top'
           ></div>
           {/* TEXT */}
-          <div>
-            <h2>About me.</h2>
-            <h3>I'm a Freelance Front-end Developer with over 3 years of experience.</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum magni quas consectetur numquam ab explicabo quam alias quasi perferendis aliquid.</p>
+          <div className='flex-1'>
+            <h2 className='h2 text-accent'>About me.</h2>
+            <h3 className='h3 mb-4'>I'm a Freelance Front-end Developer with over 3 years of experience.</h3>
+            <p className='mb-6'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum magni quas consectetur numquam ab explicabo quam alias quasi perferendis aliquid.</p>
             {/* STATS */}
             <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
               <div>
