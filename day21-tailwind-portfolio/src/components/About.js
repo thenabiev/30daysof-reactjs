@@ -24,11 +24,20 @@ const About = () => {
       <div className="container mx-auto">
         <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
           {/* IMAGE */}
-          <div 
-            className='flex-1 bg-about bg-contain bg-no-repeat min-h-[640px] mix-blend-lighten bg-top'
-          ></div>
+          <motion.div 
+            variants={fadeIn('right', 0.3)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{once:false, amount:0.3}}
+            className='flex-1 bg-about bg-contain bg-no-repeat min-h-[640px] mix-blend-lighten '
+          ></motion.div>
           {/* TEXT */}
-          <div className='flex-1'>
+          <motion.div 
+            variants={fadeIn('left', 0.3)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{once:false, amount:0.3}}
+            className='flex-1'>
             <h2 className='h2 text-accent'>About me.</h2>
             <h3 className='h3 mb-4'>I'm a Freelance Front-end Developer with over 3 years of experience.</h3>
             <p className='mb-6'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum magni quas consectetur numquam ab explicabo quam alias quasi perferendis aliquid.</p>
@@ -74,7 +83,7 @@ const About = () => {
               <button className='btn btn-lg'>Contact me</button>
               <a href="#" className='text-gradient btn-link' >My Portfolio</a>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
